@@ -1,11 +1,6 @@
-# from logging import exception
-# from urllib.request import urlcleanup
 import requests
 from bs4 import BeautifulSoup
 import sys
-# from typing import NewType
-from typing import Final, final
-
 
 
 class Website():

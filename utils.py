@@ -13,8 +13,6 @@ def request(url : str):
         print(f"Could't connect to {url}")  
         exit(1)      
 
-def download(mediaUrl : str, path = ""):
-    pass
 
 
 def displayHelp():
@@ -22,7 +20,7 @@ def displayHelp():
     print("To specify path where video will be saved use -p or --path, by default this value is current directory")
     print("cdaDownloader [url] [argument] [argument Value]")
     print("Example: cdaDownloader https://www.cda.pl/video/64920053f -q 1080p -p /home/user/Downloads")
-    exit(1)
+    exit(0)
 
 
 def setArgs(args : list) -> dict:
