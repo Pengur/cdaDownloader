@@ -28,9 +28,15 @@ class FolderHandler():
             while(i > 0):
                 try:
                     video.download(path)
+                except KeyboardInterrupt:
+                    print("Keyboard Interruption, exiting now...")
+                    exit(1)
                 except:
-                    if()
                     i -= 1
+                    if(i < 1):
+                        print("Too many failed tries, exiting now...")
+                        exit(1)
+                        
                     print("Something went wrong, trying again")
                     print(f"{i} tries left")
                 else:
